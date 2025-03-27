@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="shortcut icon" href="/assests/Logo/Logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html" target="_blank"><img src="/assests/Logo/Logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.html" target="_blank">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#about" target="_blank">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html" target="_blank">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Rides
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="rides.html" target="_blank">Boys</a></li>
+                            <li><a class="dropdown-item" href="rides.html#girls" target="_blank">Girls</a></li>
+                            <li><a class="dropdown-item" href="rides.html#kids" target="_blank">Kids</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Feature
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/index.html#booking" target="_blank">Booking</a></li>
+                            <li><a class="dropdown-item" href="gallery.html" target="_blank">Gallery</a></li>
+                            <li><a class="dropdown-item" href="packages.html" target="_blank">Ticket Packages</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="team.html" target="_blank">Our Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#timing" target="_blank">Timings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" target="_blank">Contact Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <button id="scrollTop" onclick="scrollToTop()">⬆</button>
+
+    <section class="rides-descrp">
+        <h1>Rides</h1>
+        <div class="rides-sec">
+            <div class="rides-para" id="wave">
+                <h2>Wave POOL</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, laboriosam! Quidem iste in eum
+                    odio corrupti laborum vero nisi soluta, laudantium maiores sed recusandae, Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Blanditiis asperiores quas eveniet, cupiditate voluptatibus
+                    officia eum doloremque deleniti eos error. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ea ipsum vitae sit praesentium nulla a, nostrum odio magni est atque dolorem corrupti non?
+                    Veritatis, atque distinctio alias harum beatae accusamus fuga nobis facilis? Facere vel deserunt
+                    asperiores doloremque, delectus voluptate quasi nihil voluptatum fuga veniam laborum? Nostrum
+                    deleniti id dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati architecto
+                    repudiandae beatae tenetur, nostrum vel ullam. Quos obcaecati veniam officiis! doloribus, quam qui
+                    voluptas praesentium autem!</p>
+            </div>
+            <div class="rides-image">
+                <img src="/assests/Rides/Adult/img-1.png" alt="">
+            </div>
+            <div class="rides-para" id="fall">
+                <h2>Free FALL</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, laboriosam! Quidem iste in eum
+                    odio corrupti laborum vero nisi soluta, laudantium maiores sed recusandae, Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Blanditiis asperiores quas eveniet, cupiditate voluptatibus
+                    officia eum doloremque deleniti eos error. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ea ipsum vitae sit praesentium nulla a, nostrum odio magni est atque dolorem corrupti non?
+                    Veritatis, atque distinctio alias harum beatae accusamus fuga nobis facilis? Facere vel deserunt
+                    asperiores doloremque, delectus voluptate quasi nihil voluptatum fuga veniam laborum? Nostrum
+                    deleniti id dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati architecto
+                    repudiandae beatae tenetur, nostrum vel ullam. Quos obcaecati veniam officiis! doloribus, quam qui
+                    voluptas praesentium autem!</p>
+            </div>
+            <div class="rides-image">
+                <img src="/assests/Rides/Adult/img-2.png" alt="">
+            </div>
+            <div class="rides-para" id="aqua" data-aos="flip-right" data-aos-delay="200">
+                <h2>Aqua Play</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, laboriosam! Quidem iste in eum
+                    odio corrupti laborum vero nisi soluta, laudantium maiores sed recusandae, Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Blanditiis asperiores quas eveniet, cupiditate voluptatibus
+                    officia eum doloremque deleniti eos error. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ea ipsum vitae sit praesentium nulla a, nostrum odio magni est atque dolorem corrupti non?
+                    Veritatis, atque distinctio alias harum beatae accusamus fuga nobis facilis? Facere vel deserunt
+                    asperiores doloremque, delectus voluptate quasi nihil voluptatum fuga veniam laborum? Nostrum
+                    deleniti id dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati architecto
+                    repudiandae beatae tenetur, nostrum vel ullam. Quos obcaecati veniam officiis! doloribus, quam qui
+                    voluptas praesentium autem!</p>
+            </div>
+            <div class="rides-image"  data-aos="flip-left" data-aos-delay="200">
+                <img src="/assests/Rides/Adult/img-3.png" alt="">
+            </div>
+            <div class="rides-para" id="cyclone" data-aos="fade-up" data-aos-delay="200">
+                <h2>Cyclone POOL</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, laboriosam! Quidem iste in eum
+                    odio corrupti laborum vero nisi soluta, laudantium maiores sed recusandae, Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Blanditiis asperiores quas eveniet, cupiditate voluptatibus
+                    officia eum doloremque deleniti eos error. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ea ipsum vitae sit praesentium nulla a, nostrum odio magni est atque dolorem corrupti non?
+                    Veritatis, atque distinctio alias harum beatae accusamus fuga nobis facilis? Facere vel deserunt
+                    asperiores doloremque, delectus voluptate quasi nihil voluptatum fuga veniam laborum? Nostrum
+                    deleniti id dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati architecto
+                    repudiandae beatae tenetur, nostrum vel ullam. Quos obcaecati veniam officiis! doloribus, quam qui
+                    voluptas praesentium autem!</p>
+            </div>
+            <div class="rides-image">
+                <img src="/assests/Rides/Adult/img-4.png" alt="" data-aos="fade-down" data-aos-delay="200">
+            </div>
+            <div class="rides-para" id="ladies" data-aos="flip-up" data-aos-delay="200">
+                <h2>Ladies POOL</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, laboriosam! Quidem iste in eum
+                    odio corrupti laborum vero nisi soluta, laudantium maiores sed recusandae, Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Blanditiis asperiores quas eveniet, cupiditate voluptatibus
+                    officia eum doloremque deleniti eos error. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ea ipsum vitae sit praesentium nulla a, nostrum odio magni est atque dolorem corrupti non?
+                    Veritatis, atque distinctio alias harum beatae accusamus fuga nobis facilis? Facere vel deserunt
+                    asperiores doloremque, delectus voluptate quasi nihil voluptatum fuga veniam laborum? Nostrum
+                    deleniti id dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati architecto
+                    repudiandae beatae tenetur, nostrum vel ullam. Quos obcaecati veniam officiis! doloribus, quam qui
+                    voluptas praesentium autem!</p>
+            </div>
+            <div class="rides-image">
+                <img src="/assests/Rides/Girls/Img-1.png" alt="" data-aos="flip-down" data-aos-delay="200">
+            </div>
+            <div class="rides-para" id="twin" data-aos="zoom-in" data-aos-delay="200">
+                <h2>Twin POOL</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, laboriosam! Quidem iste in eum
+                    odio corrupti laborum vero nisi soluta, laudantium maiores sed recusandae, Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Blanditiis asperiores quas eveniet, cupiditate voluptatibus
+                    officia eum doloremque deleniti eos error. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ea ipsum vitae sit praesentium nulla a, nostrum odio magni est atque dolorem corrupti non?
+                    Veritatis, atque distinctio alias harum beatae accusamus fuga nobis facilis? Facere vel deserunt
+                    asperiores doloremque, delectus voluptate quasi nihil voluptatum fuga veniam laborum? Nostrum
+                    deleniti id dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati architecto
+                    repudiandae beatae tenetur, nostrum vel ullam. Quos obcaecati veniam officiis! doloribus, quam qui
+                    voluptas praesentium autem!</p>
+            </div>
+            <div class="rides-image">
+                <img src="/assests/Rides/Girls/Img-2.png" alt="" data-aos="zoom-in-up" data-aos-delay="200">
+            </div>
+            <div class="rides-para" id="serenity" data-aos="zoom-in-down" data-aos-delay="200">
+                <h2>Serenity Wave POOL</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, laboriosam! Quidem iste in eum
+                    odio corrupti laborum vero nisi soluta, laudantium maiores sed recusandae, Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Blanditiis asperiores quas eveniet, cupiditate voluptatibus
+                    officia eum doloremque deleniti eos error. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ea ipsum vitae sit praesentium nulla a, nostrum odio magni est atque dolorem corrupti non?
+                    Veritatis, atque distinctio alias harum beatae accusamus fuga nobis facilis? Facere vel deserunt
+                    asperiores doloremque, delectus voluptate quasi nihil voluptatum fuga veniam laborum? Nostrum
+                    deleniti id dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati architecto
+                    repudiandae beatae tenetur, nostrum vel ullam. Quos obcaecati veniam officiis! doloribus, quam qui
+                    voluptas praesentium autem!</p>
+            </div>
+            <div class="rides-image">
+                <img src="/assests/Rides/Girls/Img-3.png" alt="" data-aos="zoom-in" data-aos-delay="200">
+            </div>
+            <div class="rides-para" id="blue" data-aos="flip-right" data-aos-delay="200">
+                <h2>Blue Ocean</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, laboriosam! Quidem iste in eum
+                    odio corrupti laborum vero nisi soluta, laudantium maiores sed recusandae, Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Blanditiis asperiores quas eveniet, cupiditate voluptatibus
+                    officia eum doloremque deleniti eos error. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ea ipsum vitae sit praesentium nulla a, nostrum odio magni est atque dolorem corrupti non?
+                    Veritatis, atque distinctio alias harum beatae accusamus fuga nobis facilis? Facere vel deserunt
+                    asperiores doloremque, delectus voluptate quasi nihil voluptatum fuga veniam laborum? Nostrum
+                    deleniti id dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati architecto
+                    repudiandae beatae tenetur, nostrum vel ullam. Quos obcaecati veniam officiis! doloribus, quam qui
+                    voluptas praesentium autem!</p>
+            </div>
+            <div class="rides-image">
+                <img src="/assests/Rides/Girls/Img-4.png" alt="" data-aos="flip-left" data-aos-delay="200">
+            </div>
+            <div class="rides-para" id="rainbow" data-aos="fade-up" data-aos-delay="200">
+                <h2>Rainbow</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, laboriosam! Quidem iste in eum
+                    odio corrupti laborum vero nisi soluta, laudantium maiores sed recusandae, Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Blanditiis asperiores quas eveniet, cupiditate voluptatibus
+                    officia eum doloremque deleniti eos error. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ea ipsum vitae sit praesentium nulla a, nostrum odio magni est atque dolorem corrupti non?
+                    Veritatis, atque distinctio alias harum beatae accusamus fuga nobis facilis? Facere vel deserunt
+                    asperiores doloremque, delectus voluptate quasi nihil voluptatum fuga veniam laborum? Nostrum
+                    deleniti id dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati architecto
+                    repudiandae beatae tenetur, nostrum vel ullam. Quos obcaecati veniam officiis! doloribus, quam qui
+                    voluptas praesentium autem!</p>
+            </div>
+            <div class="rides-image">
+                <img src="/assests/Rides/Kids/img-1.png" alt="" data-aos="fade-down" data-aos-delay="200">
+            </div>
+            <div class="rides-para" id="rim" data-aos="flip-up" data-aos-delay="200">
+                <h2>Rim Jhim</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, laboriosam! Quidem iste in eum
+                    odio corrupti laborum vero nisi soluta, laudantium maiores sed recusandae, Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Blanditiis asperiores quas eveniet, cupiditate voluptatibus
+                    officia eum doloremque deleniti eos error. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ea ipsum vitae sit praesentium nulla a, nostrum odio magni est atque dolorem corrupti non?
+                    Veritatis, atque distinctio alias harum beatae accusamus fuga nobis facilis? Facere vel deserunt
+                    asperiores doloremque, delectus voluptate quasi nihil voluptatum fuga veniam laborum? Nostrum
+                    deleniti id dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati architecto
+                    repudiandae beatae tenetur, nostrum vel ullam. Quos obcaecati veniam officiis! doloribus, quam qui
+                    voluptas praesentium autem!</p>
+            </div>
+            <div class="rides-image">
+                <img src="/assests/Rides/Kids/img-2.png" alt="" data-aos="flip-down" data-aos-delay="200">
+            </div>
+            <div class="rides-para" id="slide" data-aos="zoom-in-up" data-aos-delay="200">
+                <h2>Family Slide</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, laboriosam! Quidem iste in eum
+                    odio corrupti laborum vero nisi soluta, laudantium maiores sed recusandae, Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Blanditiis asperiores quas eveniet, cupiditate voluptatibus
+                    officia eum doloremque deleniti eos error. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ea ipsum vitae sit praesentium nulla a, nostrum odio magni est atque dolorem corrupti non?
+                    Veritatis, atque distinctio alias harum beatae accusamus fuga nobis facilis? Facere vel deserunt
+                    asperiores doloremque, delectus voluptate quasi nihil voluptatum fuga veniam laborum? Nostrum
+                    deleniti id dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati architecto
+                    repudiandae beatae tenetur, nostrum vel ullam. Quos obcaecati veniam officiis! doloribus, quam qui
+                    voluptas praesentium autem!</p>
+            </div>
+            <div class="rides-image">
+                <img src="/assests/Rides/Kids/img-3.png" alt="" data-aos="zoom-in" data-aos-delay="200">
+            </div>
+            <div class="rides-para" id="jungle" data-aos="flip-right" data-aos-delay="200">
+                <h2>The Jungle</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, laboriosam! Quidem iste in eum
+                    odio corrupti laborum vero nisi soluta, laudantium maiores sed recusandae, Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Blanditiis asperiores quas eveniet, cupiditate voluptatibus
+                    officia eum doloremque deleniti eos error. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ea ipsum vitae sit praesentium nulla a, nostrum odio magni est atque dolorem corrupti non?
+                    Veritatis, atque distinctio alias harum beatae accusamus fuga nobis facilis? Facere vel deserunt
+                    asperiores doloremque, delectus voluptate quasi nihil voluptatum fuga veniam laborum? Nostrum
+                    deleniti id dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati architecto
+                    repudiandae beatae tenetur, nostrum vel ullam. Quos obcaecati veniam officiis! doloribus, quam qui
+                    voluptas praesentium autem!</p>
+            </div>
+            <div class="rides-image">
+                <img src="/assests/Rides/Kids/img-4.png" alt="" data-aos="flip-left" data-aos-delay="200">
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+    </section>
+
+    <footer>
+        <div class="f-main">
+            <div id="f-about-us" class="f-about">
+                <h2><i class="fa-solid fa-person-swimming"></i>WATER WORLD</h2>
+                <p class="f-about-para">It is a long established fact that a render will be distracted by the readable
+                    content of a page when
+                    looking at its layout.The point of Meeting us</p>
+                <div class="f-contact">
+
+                    <p><i class="fa-solid fa-location-dot"></i>Lorem Ipsum NY-36524</p>
+
+                    <p><i class="fa-solid fa-phone-volume"></i>(+01)-123456789</p>
+
+                    <p><i class="fa-regular fa-envelope"></i>demo@gmail.com</p>
+
+                </div>
+            </div>
+
+            <div class="f-navbar">
+                <h2>NAVIGATION</h2>
+                <ul>
+                    <li><a href="/index.html" target="_blank">Home</a></li>
+                    <li><a href="/index.html#about" target="_blank">About</a></li>
+                    <li><a href="gallery.html" target="_blank">Gallery</a></li>
+                    <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="f-discover">
+                <h2>SUPPORT</h2>
+                <ul>
+                    <li><a href="team.html#help" target="_blank">Help</a></li>
+                    <li><a href="team.html#terms" target="_blank">Terms & Condition</a></li>
+                    <li><a href="team.html#disclaimer" target="_blank">Discalimer</a></li>
+                    <li><a href="team.html#sup" target="_blank">Support</a></li>
+                </ul>
+                <div class="f-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a><a
+                        href="http://www.twitter.com/" target="_blank"><i
+                            class="fa-brands fa-square-x-twitter"></i></a><a href="https://www.instagram.com/"
+                        target="_blank"><i class="fa-brands fa-square-instagram"></i><a href="https://www.linkedin.com/"
+                            target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="f-opn-hours">
+                <h2>OPENING HOURS</h2>
+                <ul>
+                    <li>Mon - Fri: <span><i class="fa-solid fa-clock"></i>11:00 AM - 16:00 PM</span></li>
+                    <li>Sat - Sun: <span class="sat"><i class="fa-solid fa-clock"></i>09:00 AM - 17:00 PM</span></li>
+                    <li>Holiday: <span class="holiday"><i class="fa-solid fa-clock"></i>09:00 AM - 17:00 PM</span></li>
+                </ul>
+                <div class="f-payment">
+                    <h2>Payment Accepted:</h2>
+                    <ul>
+                        <li><i class="fa-brands fa-cc-visa"></i></li>
+                        <li><i class="fa-brands fa-cc-mastercard"></i></li>
+                        <li><i class="fa-brands fa-cc-paypal"></i></li>
+                        <li><i class="fa-solid fa-credit-card"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="rights">
+            <h3>Copyright © Reserved By SR Consultency 2025</h3>
+        </div>
+
+    </footer>
+
+</body>
+<script src="/js/javascript.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html

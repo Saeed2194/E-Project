@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="shortcut icon" href="/assests/Logo/Logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="/assests/Logo/Logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/source/services.html" target="_blank">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Rides
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/source/rides.html#boys" target="_blank">Boys</a></li>
+                            <li><a class="dropdown-item" href="/source/rides.html#girls" target="_blank">Girls</a></li>
+                            <li><a class="dropdown-item" href="/source/rides.html#kids" target="_blank">Kids</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Feature
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#booking">Booking</a></li>
+                            <li><a class="dropdown-item" href="/source/gallery.html" target="_blank">Gallery</a></li>
+                            <li><a class="dropdown-item" href="/source/packages.html" target="_blank">Ticket
+                                    Packages</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/source/team.html" target="_blank">Our Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#timing">Timings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/source/contact.html" target="_blank">Contact Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <button id="scrollTop" onclick="scrollToTop()">⬆</button>
+
+    <!-- Carousel Section -->
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="https://images.unsplash.com/photo-1628238996362-a90f37d35b33?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="https://images.unsplash.com/photo-1546699718-5871c27b4197?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="https://images.unsplash.com/photo-1626840365510-3201b731eb13?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Booking Section -->
+
+    <section class="booking" id="booking">
+        <div class="booking-para" data-aos="fade-up" data-aos-delay="200">
+            <h1>Welcome to Water World</h1>
+            <h3>The Biggest Theme & Amusement Park</h3>
+            <p>Lorem ipsum, dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, expedita! sit amet
+                consectetur adipisicing elit. Nisi modi...</p>
+            <a href="/source/packages.html" target="_blank"><button class="btn btn-primary">Packages</button></a>
+        </div>
+        <div class="booking-contact" data-aos="fade-down" data-aos-delay="200">
+            <h1>Book Your Ticket</h1>
+
+            <form action="#" id="bkgform" onsubmit="return validForm()">
+                <div class="form-group">
+                    <input type="text" class="bkg-input" placeholder="*Your Name" name="username" id="username"
+                        required>
+                    <div class="error" id="username-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" class="bkg-input" placeholder="*Email" name="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="number" class="bkg-input" placeholder="*Mob Number" name="number" id="number" required>
+                    <div class="error" id="number-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <input type="date" class="bkg-input" name="date" id="date" required>
+                    <div class="error" id="number-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <select name="Packages" class="packages" id="package">
+                        <option value="">--Select Packages--</option>
+                        <option value="basic">Basic Package</option>
+                        <option value="family">Family Package</option>
+                        <option value="premium">Premium Package</option>
+                    </select>
+                    <div class="error" id="package-error"></div>
+                </div>
+
+                <button type="submit">Submit Now</button>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about" class="about-main">
+        <div class="about-para" data-aos="flip-left" data-aos-delay="200">
+
+            <h1>About Us</h1>
+            <h2>Water World Environment</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nihil doloribus, cumque ipsum, voluptas
+                vero officiis Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis doloremque est enim
+                vitae quas dolore incidunt repellat ipsam consequatur quis! veritatis quaerat nulla laborum</p>
+            <ul class="about-logo">
+                <div>
+                    <li><i class="fas fa-glass-cheers"></i><a href="#">Food & Drinks</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </li>
+                </div>
+                <li><i class="fa-solid fa-circle-dot"></i>
+                    <a href="#">Many Attractions</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </li>
+                <li><i class="fa-solid fa-hand-holding-dollar"></i>
+                    <a href="#">Affordable Price</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </li>
+                <li><i class="fa-solid fa-lock"></i>
+                    <a href="#">Safety Lockers</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </li>
+            </ul>
+        </div>
+        <div class="about-image" data-aos="flip-right" data-aos-delay="200">
+            <div class="about-image1">
+                <img src="/assests/About Us/about-img-1.avif" alt="">
+            </div>
+            <div class="about-image2">
+                <img src="/assests/About Us/about-img-2.avif" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Attractions Section -->
+
+    <section class="attractions">
+        <h1>Attractions</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere pariatur repellat Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Aperiam officia beatae dolore possimus harum molestias excepturi odit id
+            atque eligendi. nulla rerum iste obcaecati deleniti ad nemo, vel, error ratione inventore nam quae, fuga
+            itaque non nihil ullam animi</p>
+        <!-- <marquee behavior="alternate" scrollamount="7" direction="" data-aos="flip-down" data-aos-delay="200"> -->
+        <marquee behavior="alternate" scrollamount="7" direction="" >
+            <img src="/assests/Attractions/img-1.png" alt="">
+            <img src="/assests/Attractions/img-2.png" alt="">
+            <img src="/assests/Attractions/img-3.png" alt="">
+            <img src="/assests/Attractions/img-4.png" alt="">
+
+        </marquee>
+
+    </section>
+
+    <!-- Timing Section -->
+
+    <section class="timing" id="timing">
+        <div class="accordion" id="accordionExample" data-aos="zoom-out-up" data-aos-delay="200">
+            <h1>Timinigs & FAQ's</h1>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h4> Park Open Timing:►</h4>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h2>Operating Hours:</h2>
+                        <p><strong>Monday - Friday</strong> : 11:00 AM - 16:00 PM</p>
+                        <p><strong>Saturday - Sunday</strong> : 09:00 AM - 17:00 PM</p>
+                        <p><strong>Holiday</strong> : 09:00 AM - 17:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h4> Water World Location Map:►</h4>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><strong>D - 4 Block H North Nazimabad Town, Karachi, 74700</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h4>Why Only Families Are Allowed►</h4>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><strong> It's Our Company Policy Only Families Allowed</strong> </p>
+                        <p>With Ratio of Maximum <strong> 60% Boys & Minimum 40% Girls </strong>
+                            if you have <strong> 10 Person 6 Male 4 Female is ratio 60/40</strong> is compulsory </p>
+                        <p>1 Male & 1 Female Are <strong>Allowed</strong></p>
+                        <p><strong>Only Boys are Not Allowed</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <h4>Separate pools for girls and boys in Water World ►</h4>
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p><strong>YES...</strong></p>
+                        <p>Not only for Girls but <strong>Kids</strong> also have their Own Pools for thier
+                            Enjoyement...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="f-main">
+            <div class="f-about">
+                <h2><i class="fa-solid fa-person-swimming"></i>WATER WORLD</h2>
+                <p class="f-about-para">It is a long established fact that a render will be distracted by the readable
+                    content of a page when
+                    looking at its layout.The point of Meeting us</p>
+                <div class="f-contact">
+
+                    <p><i class="fa-solid fa-location-dot"></i>Lorem Ipsum NY-36524</p>
+
+                    <p><i class="fa-solid fa-phone-volume"></i>(+01)-123456789</p>
+
+                    <p><i class="fa-regular fa-envelope"></i>demo@gmail.com</p>
+
+                </div>
+            </div>
+
+            <div class="f-navbar">
+                <h2>NAVIGATION</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="/source/gallery.html" target="_blank">Gallery</a></li>
+                    <li><a href="/source/contact.html" target="_blank">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="f-discover">
+                <h2>SUPPORT</h2>
+                <ul>
+                    <li><a href="/source/team.html#help" target="_blank">Help</a></li>
+                    <li><a href="/source/team.html#terms" target="_blank">Terms & Condition</a></li>
+                    <li><a href="/source/team.html#disclaimer" target="_blank">Discalimer</a></li>
+                    <li><a href="/source/team.html#sup" target="_blank">Support</a></li>
+                </ul>
+                <div class="f-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a><a
+                        href="http://www.twitter.com/" target="_blank"><i
+                            class="fa-brands fa-square-x-twitter"></i></a><a href="https://www.instagram.com/"
+                        target="_blank"><i class="fa-brands fa-square-instagram"></i><a href="https://www.linkedin.com/"
+                            target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="f-opn-hours">
+                <h2>OPENING HOURS</h2>
+                <ul>
+                    <li>Mon - Fri: <span><i class="fa-solid fa-clock"></i>11:00 AM - 16:00 PM</span></li>
+                    <li>Sat - Sun: <span class="sat"><i class="fa-solid fa-clock"></i>09:00 AM - 17:00 PM</span></li>
+                    <li>Holiday: <span class="holiday"><i class="fa-solid fa-clock"></i>09:00 AM - 17:00 PM</span></li>
+                </ul>
+                <div class="f-payment">
+                    <h2>Payment Accepted:</h2>
+                    <ul>
+                        <li><i class="fa-brands fa-cc-visa"></i></li>
+                        <li><i class="fa-brands fa-cc-mastercard"></i></li>
+                        <li><i class="fa-brands fa-cc-paypal"></i></li>
+                        <li><i class="fa-solid fa-credit-card"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="rights">
+            <h3>Copyright © Reserved By SR Consultency 2025</h3>
+        </div>
+
+    </footer>
+
+</body>
+<script src="/js/javascript.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
