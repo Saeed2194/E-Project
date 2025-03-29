@@ -1020,8 +1020,13 @@ footer {
         font-size: 0.8em;
     }
 
+    .booking-contact .error {
+        font-size: 0.7em;
+        margin-top: 0;
+    }
+    
     .booking-contact button {
-        font-size: 1.4em;
+        font-size: 1.2em;
         margin-top: 0.7em;
     }
 
@@ -1435,11 +1440,11 @@ footer {
 
     .booking-contact {
         width: 80%;
-        height: 55vh;
     }
 
     .booking-contact h1 {
         font-size: 2em;
+        margin-bottom: -0.2em;
     }
 
     /* About Section */
