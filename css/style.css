@@ -947,7 +947,7 @@ footer {
 
 
 
-@media (max-width:800px) {
+@media (max-width:1000px) {
 
     /* Back to Top */
 
@@ -1413,9 +1413,9 @@ footer {
 
     /* Navbar Section */
 
-    .container-fluid img {
+/*     .container-fluid img {
         display: none;
-    }
+    } */
 
     /* Booking Section */
 
