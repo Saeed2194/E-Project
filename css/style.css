@@ -285,7 +285,7 @@ ul li a:hover {
 
 .timing::before {
     content: "";
-    background-image: url("assests/Timings/img-1.avif");
+    background-image: url("../assests/Timings/img-1.avif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
