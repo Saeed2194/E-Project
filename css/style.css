@@ -1417,10 +1417,10 @@ footer {
 
     /* Navbar Section */
 
-/*     .container-fluid img {
-        display: none;
-    } */
-
+    .container-fluid img {
+        width: 14vw;
+    }
+    
     /* Booking Section */
 
     .booking {
