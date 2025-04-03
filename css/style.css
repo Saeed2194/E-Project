@@ -56,7 +56,7 @@ ul li a:hover {
 } 
 
 .carousel-item h1,h2{
-    color:  rgb(0, 191, 255);
+    color:  rgb(0, 191, 255) !important;
 }
 
 /* Back to Top */
