@@ -57,6 +57,7 @@ ul li a:hover {
 
 .carousel-caption h1,h2{
     color: black !important;
+    font-weight: bold !important;
 }
 
 /* Back to Top */
