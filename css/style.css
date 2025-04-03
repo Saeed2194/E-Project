@@ -53,6 +53,10 @@ ul li a:hover {
 
 .carousel-item img {
     height: 80vh;
+} 
+
+.carousel-item h1,h2{
+    color:  rgb(0, 191, 255);
 }
 
 /* Back to Top */
