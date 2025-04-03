@@ -55,10 +55,6 @@ ul li a:hover {
     height: 80vh;
 } 
 
-.carousel-item h1{
-    color:  rgb(0, 191, 255) !important;
-}
-
 /* Back to Top */
 
 #scrollTop {
