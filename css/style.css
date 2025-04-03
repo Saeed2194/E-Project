@@ -55,10 +55,6 @@ ul li a:hover {
     height: 80vh;
 } 
 
-.carousel-caption h1,h2{
-    color: white !important;
-}
-
 /* Back to Top */
 
 #scrollTop {
