@@ -55,6 +55,11 @@ ul li a:hover {
     height: 80vh;
 } 
 
+.carousel .carousel-caption h1,h2{
+    font-size: 3em !important;
+    font-weight: bold;
+}
+
 /* Back to Top */
 
 #scrollTop {
