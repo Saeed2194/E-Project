@@ -1420,6 +1420,12 @@ footer {
     .container-fluid img {
         width: 14vw;
     }
+
+    /* Carousel Section */
+
+    .custom-carousel .carousel-inner{
+        height: 70vh !important;
+    }
     
     /* Booking Section */
 
