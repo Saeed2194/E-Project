@@ -112,7 +112,7 @@ function validateForm(event) {
         document.getElementById('email-error').textContent = '*Email is required';
         isValid = false;
     } else if (!emailPattern.test(email)) {
-        document.getElementById('email-error').textContent = '*Enter a valid email address';
+        document.getElementById('email-error').textContent = '*Enter a valid email address example@gmail.com';
         isValid = false;
     }
 
