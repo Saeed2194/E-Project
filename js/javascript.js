@@ -116,7 +116,7 @@ function validateForm(event) {
     }
 
     const number = document.getElementById('number').value.trim();
-    const phonePattern = /^[0-9]{11}$/;
+    const phonePattern = /^03[0-9]{9}$/;
     if (number === '') {
         document.getElementById('number-error').textContent = '*Number is required';
         isValid = false;
