@@ -106,7 +106,8 @@ function validateForm(event) {
     }
 
     const email = document.getElementById('email').value.trim();
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailPattern = /^[^\s@]+@gmail+\.com$/;
+    
     if (email === '') {
         document.getElementById('email-error').textContent = '*Email is required';
         isValid = false;
