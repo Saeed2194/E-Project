@@ -121,7 +121,7 @@ function validateForm(event) {
         document.getElementById('number-error').textContent = '*Number is required';
         isValid = false;
     } else if (!phonePattern.test(number)) {
-        document.getElementById('number-error').textContent = '*Number must be exactly 11 digits';
+        document.getElementById('number-error').textContent = '*Number must start with 03 and exactly 11 digits';
         isValid = false;
     }
 
