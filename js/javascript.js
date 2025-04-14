@@ -32,23 +32,23 @@ function validForm() {
     }
 
     const email = document.getElementById('email').value.trim();
-
+    const emailPattern = /^[^\s@]+@gmail+\.com$/;
     if (email === '') {
-        document.getElementById('email-error').textContent = '*Email is required'
+        document.getElementById('email-error').textContent = '*Email is required';
         isValid = false;
-
+    } else if (!emailPattern.test(email)) {
+        document.getElementById('email-error').textContent = '*Enter a valid email address example@gmail.com';
+        isValid = false;
     }
 
     const number = document.getElementById('number').value.trim();
-
-    if (number === "") {
-        document.getElementById('number-error').textContent = '*Number is required'
+    const phonePattern = /^03[0-9]{9}$/;
+    if (number === '') {
+        document.getElementById('number-error').textContent = '*Number is required';
         isValid = false;
-
-    } else if (number.length < 11) {
-        document.getElementById('number-error').textContent = '*Number must be at least 11 character';
+    } else if (!phonePattern.test(number)) {
+        document.getElementById('number-error').textContent = '*Number must start with 03 and exactly 11 digits';
         isValid = false;
-
     }
 
     const packageSelection = document.getElementById('package').value;
